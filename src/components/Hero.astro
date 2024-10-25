@@ -1,0 +1,76 @@
+---
+import { Button } from "./ui/button";
+---
+
+<section class="py-16 group px-4">
+    <div class="container max-w-5xl mx-auto">
+        <div
+            class="rounded-lg border bg-card text-card-foreground shadow-sm flex flex-col justify-between md:flex-row overflow-hidden group-hover:drop-shadow-[0_0px_7px_rgba(255,255,255,0.75)] transition-all"
+        >
+            <div class="p-6 md:max-w-2xl transition-all">
+                <div class="mb-2 flex items-center gap-2">
+                    <span
+                        class="flex size-7 items-center justify-center rounded-full bg-zinc-100"
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-sparkles size-4"
+                        >
+                            <path
+                                d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                            >
+                            </path>
+                            <path d="M20 3v4"></path>
+                            <path d="M22 5h-4"></path>
+                            <path d="M4 17v2"></path>
+                            <path d="M5 18H3"></path>
+                        </svg></span
+                    >
+                    <h2 class="text-2xl font-bold">
+                        Aprende Inglés con un LANGUAGE COACH
+                    </h2>
+                </div>
+                <p class="text-zinc-600">
+                    Con más de 20 años de experiencia en la enseñanza del
+                    inglés, Jireh English Academy ofrece cursos especializados
+                    para minería, negocios, y viajes. <strong
+                        >Nos adaptamos a tus necesidades para que aprendas
+                        inglés</strong
+                    > de forma práctica y eficiente.
+                </p>
+                <Button
+                    className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-zinc-900 text-white hover:bg-zinc-900/90 h-10 px-4 py-2 mt-8 group-hover:animate-pulse group-hover:bg-blue-950"
+                >
+                    Get Started
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-arrow-right ml-2 size-4"
+                    >
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                </Button>
+            </div>
+            <img
+                src="/Img/Sin título-3.png"
+                alt="placeholder"
+                class="aspect-video object-cover md:max-w-md transition-all"
+            />
+        </div>
+    </div>
+</section>
