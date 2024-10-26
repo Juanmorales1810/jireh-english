@@ -1,0 +1,23 @@
+---
+import CardBlog from "./CardBlog.astro";
+---
+
+<section class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center text-zinc-50 mb-16 md:text-5xl">
+        Blogs
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 place-items-center">
+        <CardBlog
+            title="Cómo Mejorar tu Inglés para Negocios en La Serena"
+            description="Descubre los mejores consejos para mejorar tu inglés y sobresalir en el entorno laboral."
+            image="/Img/Sin título-1.png"
+            date="25 Oct 2024"
+        />
+        <CardBlog
+            title="Inglés para Minería: Frases y Vocabulario Básico"
+            description="Aprende el vocabulario clave que necesitarás para comunicarte en un entorno minero en inglés."
+            image="/Img/Sin título-1.png"
+            date="25 Oct 2024"
+        />
+    </div>
+</section>
