@@ -1,0 +1,36 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    image: string;
+    date: string;
+    slug?: string;
+}
+const { title, description, image, date, slug } = Astro.props;
+---
+
+<article
+    class="overflow-hidden rounded-lg shadow transition hover:shadow-lg max-w-lg"
+>
+    <a href={`/blogs/${slug}`}>
+        <img
+            alt={title}
+            src={image}
+            class="h-56 w-full object-cover aspect-video"
+        />
+
+        <div class="bg-white p-4 sm:p-6">
+            <time datetime="2022-10-10" class="block text-xs text-gray-500"
+                >{date}</time
+            >
+
+            <a href="#">
+                <h3 class="mt-0.5 text-lg text-gray-900">{title}</h3>
+            </a>
+
+            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                {description}
+            </p>
+        </div>
+    </a>
+</article>
