@@ -6,6 +6,7 @@ const ContactForm = () => {
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors },
     } = useForm();
 
@@ -13,12 +14,13 @@ const ContactForm = () => {
         event.preventDefault();
         try {
             const result = await emailjs.send(
-                "YOUR_SERVICE_ID",
-                "YOUR_TEMPLATE_ID",
+                "service_5se41gu",
+                "template_rg34xt8",
                 data,
-                "YOUR_USER_ID"
+                "nzfKdp7ymZzA0-8K_"
             );
             console.log("Mensaje enviado con éxito:", result);
+            reset();
         } catch (error) {
             console.error("Error al enviar el mensaje:", error);
         }
