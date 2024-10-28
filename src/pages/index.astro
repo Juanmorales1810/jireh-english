@@ -11,14 +11,12 @@ import Hero from "@/components/Hero.astro";
 import "@/styles/globals.css";
 ---
 
-<Layout title="Welcome to Astro.">
-    <main class="w-full mx-auto">
-        <HeroPrincipal />
-        <Hero />
-        <Service />
-        <AboutUs />
-        <Testimonials />
-        <Blogs />
-        <Contact client:only />
-    </main>
+<Layout title="Jireh English">
+    <HeroPrincipal />
+    <Hero />
+    <Service />
+    <AboutUs />
+    <Testimonials />
+    <Blogs />
+    <Contact client:visible />
 </Layout>
