@@ -1,0 +1,49 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getCollection, render } from "astro:content";
+
+export const prerender = true;
+
+import "@/styles/globals.css";
+
+export async function getStaticPaths() {
+    const courses = await getCollection("courses");
+
+    return courses.map((course) => ({
+        params: {
+            slug: course.slug,
+        },
+        props: {
+            course,
+        },
+    }));
+}
+
+const { course } = Astro.props;
+const { data } = course;
+const { title, description, image } = data;
+
+const { Content } = await render(course);
+---
+
+<Layout title=`Jireh English | ${title}`>
+    <section class="py-10 px-4">
+        <div class="container max-w-5xl mx-auto">
+            <h1
+                class="text-white text-center text-5xl py-8 font-bold drop-shadow-[0_0px_7px_rgba(255,255,255,0.35)]"
+            >
+                {title}
+            </h1>
+            <img
+                class="aspect-[10/7] object-cover rounded-xl md:aspect-[16/7]"
+                src={image}
+                alt={title}
+            />
+            <div
+                class="text-white prose prose-invert mx-auto py-6 max-w-4xl prose-li:"
+            >
+                <Content />
+            </div>
+        </div>
+    </section>
+</Layout>
