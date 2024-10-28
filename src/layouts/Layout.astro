@@ -1,9 +1,11 @@
 ---
+import { ViewTransitions } from "astro:transitions";
 interface Props {
     title: string;
+    description?: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
@@ -12,11 +14,15 @@ import Footer from "../components/Footer.astro";
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
-        <meta name="description" content="Astro description" />
+        <meta
+            name="description"
+            content={description ? description : "Description"}
+        />
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
+        <ViewTransitions />
     </head>
     <body class="relative -z-10">
         <div
@@ -24,14 +30,16 @@ import Footer from "../components/Footer.astro";
         >
         </div>
         <Header />
-        <slot />
+        <main class="w-full mx-auto mt-16 min-h-[calc(100vh-517px)]">
+            <slot />
+        </main>
         <Footer />
     </body>
 </html>
 <style is:global>
     html {
         font-family: system-ui, sans-serif;
-        background: #13151a;
+        scroll-behavior: smooth;
     }
     code {
         font-family:
