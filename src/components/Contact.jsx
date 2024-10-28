@@ -27,7 +27,7 @@ const ContactForm = () => {
     };
 
     return (
-        <section className="py-12 text-white">
+        <section id="Contacto" className="py-12 text-white">
             <div className="container mx-auto flex flex-col justify-center items-center px-4 md:flex-row">
                 <div className="max-w-2xl">
                     <h2 className="text-3xl font-bold text-center mb-6 md:text-5xl drop-shadow-[0_0px_7px_rgba(255,255,255,0.35)]">
