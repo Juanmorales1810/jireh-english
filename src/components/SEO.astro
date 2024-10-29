@@ -29,10 +29,10 @@ const {
 
 const determineCanonicalURL = () => {
     if (Astro.url.host.includes("localhost")) return "http://localhost:4321";
-    return canonical || Astro.url.pathname;
+    return canonical || `${Astro.site}${Astro.url.pathname}`;
 };
 
-const canonicalURL = new URL(determineCanonicalURL(), Astro.site);
+const canonicalURL = new URL(determineCanonicalURL());
 ---
 
 <title>{title}</title>
