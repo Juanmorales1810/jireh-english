@@ -27,12 +27,12 @@ const {
     image = "https://jireh-english.vercel.app/Img/metadata.png",
 } = Astro.props as Props;
 
-const determineCanonicalURL = () => {
-    if (Astro.url.host.includes("localhost")) return "http://localhost:4321";
-    return canonical || `${Astro.site}${Astro.url.pathname}`;
-};
+// const determineCanonicalURL = () => {
+//     if (Astro.url.host.includes("localhost")) return "http://localhost:4321";
+//     return canonical || `${Astro.site}${Astro.url.pathname}`;
+// };
 
-const canonicalURL = new URL(determineCanonicalURL());
+// const canonicalURL = new URL(determineCanonicalURL());
 ---
 
 <title>{title}</title>
@@ -57,7 +57,7 @@ const canonicalURL = new URL(determineCanonicalURL());
     ))
 }
 
-<link rel="canonical" href={canonicalURL} />
+<!-- <link rel="canonical" href={canonicalURL} /> -->
 <meta name="viewport" content="width=device-width" />
 <meta name="theme-color" content="#172554" />
 
