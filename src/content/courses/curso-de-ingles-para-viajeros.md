@@ -1,7 +1,7 @@
 ---
 title: ¡Prepárate para Tus Próximas Aventuras con Nuestro Programa de Inglés para Viajar!
 description: Curso de Inglés para la Minería
-image: /Img/Sin título-6.jpg
+image: /Img/JIREH ENGLISH ACADEMY-14.avif
 ---
 
 ## ¿Por qué aprender inglés para viajar?
