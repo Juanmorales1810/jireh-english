@@ -28,8 +28,8 @@ const ContactForm = () => {
 
     return (
         <section id="Contacto" className="py-12 text-white">
-            <div className="container mx-auto flex flex-col justify-center items-center px-4 md:flex-row">
-                <div className="max-w-2xl">
+            <div className="container mx-auto flex flex-col justify-center items-center gap-4 px-4 md:flex-row">
+                <div className="flex flex-col justify-center items-center h-[430px] max-w-2xl px-10 py-4 bg-[url(/Img/JIREH%20ENGLISH%20ACADEMY-15.avif)] bg-cover bg-center rounded-xl">
                     <h2 className="text-3xl font-bold text-center mb-6 md:text-5xl drop-shadow-[0_0px_7px_rgba(255,255,255,0.35)]">
                         Contáctanos Hoy para Más Información
                     </h2>

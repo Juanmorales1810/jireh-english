@@ -35,13 +35,11 @@ const { Content } = await render(course);
                 {title}
             </h1>
             <img
-                class="aspect-[10/7] object-cover rounded-xl md:aspect-[16/7]"
+                class="aspect-[10/7] object-cover rounded-xl md:aspect-[16/7] h-[440px] mx-auto"
                 src={image}
                 alt={title}
             />
-            <div
-                class="text-white prose prose-invert mx-auto py-6 max-w-4xl prose-li:"
-            >
+            <div class="text-white prose prose-invert mx-auto py-6 max-w-4xl">
                 <Content />
             </div>
         </div>
