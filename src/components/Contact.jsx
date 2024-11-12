@@ -146,9 +146,9 @@ const ContactForm = () => {
                             <a href="https://wa.me/+56926124587">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="800px"
-                                    height="800px"
+                                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                                    width="24px"
+                                    height="24px"
                                     viewBox="0 0 48 48"
                                     version="1.1"
                                 >
@@ -158,9 +158,9 @@ const ContactForm = () => {
                                     <g
                                         id="Icons"
                                         stroke="none"
-                                        stroke-width="1"
+                                        strokeWidth="1"
                                         fill="none"
-                                        fill-rule="evenodd"
+                                        fillRule="evenodd"
                                     >
                                         <g
                                             id="Color-"
