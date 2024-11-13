@@ -1,0 +1,48 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getCollection, render } from "astro:content";
+
+export const prerender = true;
+
+import "@/styles/globals.css";
+
+export async function getStaticPaths() {
+    const blogs = await getCollection("blogs");
+
+    return blogs.map((blog) => ({
+        params: {
+            slug: blog.slug,
+        },
+        props: {
+            blog,
+        },
+    }));
+}
+
+const { blog } = Astro.props;
+const { data } = blog;
+const { title, description, image } = data;
+
+const { Content } = await render(blog);
+---
+
+<Layout title=`Jireh English | ${title}` description={description}>
+    <section class="py-10 px-4">
+        <div class="container max-w-5xl mx-auto">
+            <img
+                class="aspect-[10/7] object-cover rounded-xl md:aspect-[16/7] h-[440px] mx-auto"
+                src={image}
+                alt={title}
+                transition:name={`img${blog.slug}`}
+            />
+            <h1
+                class="text-white text-center text-5xl py-8 font-bold drop-shadow-[0_0px_7px_rgba(255,255,255,0.35)]"
+            >
+                {title}
+            </h1>
+            <div class="text-white prose prose-invert mx-auto py-6 max-w-4xl">
+                <Content />
+            </div>
+        </div>
+    </section>
+</Layout>
