@@ -12,11 +12,12 @@ const { title, description, image, date, slug } = Astro.props;
 <article
     class="overflow-hidden rounded-lg shadow transition hover:shadow-lg max-w-lg"
 >
-    <a href={`#`}>
+    <a href={`/blogs/${slug}`}>
         <img
             alt={title}
             src={image}
             class="h-56 w-full object-cover aspect-video"
+            transition:name={`img${slug}`}
         />
 
         <div class="bg-white p-4 sm:p-6">
