@@ -1,7 +1,7 @@
 ---
 title: Curso de Inglés para la Minería
 description: Curso de Inglés para la Minería
-image: /Img/JIREH ENGLISH ACADEMY-19.avif
+image: /Img/JIREHENGLISHACADEMY-7.avif
 ---
 
 # ¿Por qué aprender inglés en la minería?
