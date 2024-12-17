@@ -14,10 +14,10 @@ const ContactForm = () => {
         event.preventDefault();
         try {
             const result = await emailjs.send(
-                "service_5se41gu",
-                "template_rg34xt8",
+                "service_6x7f0na",
+                "template_x2mcb1q",
                 data,
-                "nzfKdp7ymZzA0-8K_"
+                "3QWXS0gEsM1wpiM9o"
             );
             console.log("Mensaje enviado con éxito:", result);
             reset();
