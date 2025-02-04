@@ -1,20 +1,12 @@
-# Astro Starter Kit: Basics
+# Jireh English Academy
 
-```sh
-npm create astro@latest -- --template basics
-```
+Bienvenido al repositorio de Jireh English Academy, una plataforma web diseñada para ofrecer cursos de inglés personalizados en La Serena, Chile. Nuestros cursos están especialmente dirigidos a personas que trabajan en minería, negocios y aquellos que desean mejorar su inglés para viajes.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Descripción
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Jireh English Academy se enfoca en proporcionar una educación de alta calidad con clases personalizadas impartidas por un profesor de inglés nativo. Nuestro objetivo es mejorar la fluidez de los estudiantes y ayudarles a alcanzar sus metas lingüísticas. A través de nuestra plataforma, los estudiantes pueden acceder a información sobre nuestros servicios, leer testimonios de otros estudiantes, ver un calendario de clases, leer artículos en nuestro blog y ponerse en contacto con nosotros.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## Estructura del Proyecto
 
 ```text
 /
@@ -22,7 +14,14 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   ├── HeroPrincipal.astro
+│   │   ├── Testimonials.astro
+│   │   ├── Calendario.astro
+│   │   ├── AboutUs.astro
+│   │   ├── Service.astro
+│   │   ├── Contact.astro
+│   │   ├── Blogs.astro
+│   │   └── Hero.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
@@ -30,25 +29,48 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Características Principales
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **Cursos Personalizados**: Clases individuales diseñadas para satisfacer las necesidades específicas de cada estudiante, con un enfoque en minería, negocios y viajes.
+- **Profesor Nativo**: Todos los cursos son impartidos por un profesor de inglés nativo, garantizando una enseñanza de alta calidad.
+- **Testimonios**: Lee las experiencias y opiniones de otros estudiantes que han mejorado su inglés con nosotros.
+- **Calendario de Clases**: Consulta las fechas y horarios de nuestras clases.
+- **Blog**: Accede a artículos y recursos útiles relacionados con el aprendizaje del inglés.
+- **Contacto**: Ponte en contacto con nosotros para más información o para inscribirte en nuestros cursos.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Comandos
 
-## 🧞 Commands
+Todos los comandos se ejecutan desde la raíz del proyecto, desde una terminal:
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
+| Comando                   | Acción                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm install`             | Instala las dependencias                         |
+| `npm run dev`             | Inicia el servidor de desarrollo en `localhost:4321` |
+| `npm run build`           | Compila el sitio de producción en `./dist/`      |
+| `npm run preview`         | Previsualiza la compilación localmente antes de desplegar |
+| `npm run astro ...`       | Ejecuta comandos CLI de Astro como `astro add`, `astro check` |
+| `npm run astro -- --help` | Obtén ayuda sobre el CLI de Astro                |
 
-## 👀 Want to learn more?
+## Tecnologías Utilizadas
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **Astro**: Un moderno framework de construcción web que permite crear sitios rápidos y optimizados.
+- **Vercel**: Plataforma de despliegue que facilita la implementación y el alojamiento de aplicaciones web.
+
+## Cómo Contribuir
+
+¡Las contribuciones son bienvenidas! Si deseas contribuir a este proyecto, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit (`git commit -m 'Añadir nueva funcionalidad'`).
+4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
+5. Abre un Pull Request.
+
+## Enlace al Proyecto
+
+- Repositorio en GitHub: [Jireh English Academy](https://github.com/Juanmorales1810/jireh-english)
+- Aplicación en Vercel: [Jireh English Academy en Vercel](https://jireh-english.vercel.app)
+
+## Licencia
+
+Este proyecto no tiene una licencia específica.
